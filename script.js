@@ -8,3 +8,7 @@ function limpiar() {
   pantalla.value = '';
 }
 
+function borrar() {
+  pantalla.value = pantalla.value.slice(0, -1);
+}
+
