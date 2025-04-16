@@ -12,3 +12,10 @@ function borrar() {
   pantalla.value = pantalla.value.slice(0, -1);
 }
 
+function calcular() {
+  try {
+    pantalla.value = eval(pantalla.value);
+  } catch (e) {
+    pantalla.value = 'Error';
+  }
+}
